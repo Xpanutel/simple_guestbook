@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Шапка */
+.header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header__title {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.header__nav-list {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.header__nav-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+.header__nav-link:hover {
+    color: #ff6347; 
+}
+
+/* Основной контент */
+.main {
+    flex: 1; 
+    padding: 40px 0;
+}
+
+.intro__title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.intro__text {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+/* Стили для формы */
+.review-form {
+    margin-top: 40px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.review-form__title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.review-form__submit {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.review-form__submit:hover {
+    background-color: #ff6347;
+}
+
+/* Стили для блока с отзывами */
+.reviews {
+    margin-top: 40px;
+}
+
+.reviews__title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.review {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.review__title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.review__author {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.review__text {
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Подвал */
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: auto; 
+}
+
+.footer__text {
+    font-size: 1rem;
+    margin: 0;
+}
