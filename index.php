@@ -1,3 +1,6 @@
+<?php
+require_once "includes/db.php";
+?>
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -8,18 +11,7 @@
 </head>
 <body>
     <!-- Шапка сайта -->
-    <header class="header">
-        <div class="container">
-            <h1 class="header__title">GUESTBOOK</h1>
-            <nav class="header__nav">
-                <ul class="header__nav-list">
-                    <li><a href="#" class="header__nav-link">Главная</a></li>
-                    <li><a href="#" class="header__nav-link">О нас</a></li>
-                    <li><a href="#" class="header__nav-link">Контакты</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+    <?php include "includes/header.php" ?>
 
     <!-- Основной контент -->
     <main class="main">
@@ -64,10 +56,6 @@
     </main>
 
     <!-- Подвал сайта -->
-    <footer class="footer">
-        <div class="container">
-            <p class="footer__text">&copy; <?php echo date("Y"); ?> GUESTBOOK. Все права защищены.</p>
-        </div>
-    </footer>
+    <?php include "includes/footer.php" ?>
 </body>
 </html>
